@@ -1,0 +1,131 @@
+html, body {
+  margin: 2px;
+  height: 100%;
+  background-color: rgb(50, 85, 99);
+}
+
+#sidebar {
+	grid-area: sidebar;
+	/* overflow-y: scroll; */
+	width:55px;
+	background-color: rgb(94, 130, 144);
+}
+
+#content {
+	grid-area: content;
+}
+
+.header {
+	grid-area: header;
+
+font-family: Helvetica, sans-serif;
+	
+}
+
+.footer{
+  grid-area: footer;
+}
+
+.sideBarItem{
+	max-height: 50px;
+	max-width: 50px;
+	padding:5px;
+}
+
+.sideBarItem img{
+	max-height: 40px;
+	max-Width:40px;
+}
+
+.colourPalette{
+	grid-area: colourP;
+	display:flex;
+	flex-direction:grid;
+	flex-flow: wrap;
+}
+
+.options{
+	grid-area: options;
+	padding: 15px;
+	background-color: rgb(236, 209, 159);
+}
+
+.colourSwatches{
+	box-sizing: border-box;
+	width: 30px;
+	height: 30px;
+	max-height: 30px;
+	max-width: 30px;
+	margin: 1px;
+}
+
+	.wrapper {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 70px 450px  minmax(500px, 1fr);
+		grid-template-rows: 35px minmax(500px, 1fr) 160px;
+		grid-template-areas:
+               "header header header"
+				"sidebar content content"
+                "colourP colourP options";
+		background-color: #fff;
+		color: #444;
+	}
+.box {
+  background-color: rgb(11, 73, 97);
+  color: #fef;
+  font-size: 150%;
+}
+
+.header {
+  background-color: rgb(11, 73, 97);
+  color: rgb(194, 194, 194);
+}
+
+#legend {
+	background-color: rgb(0, 139, 53);
+	display: grid;
+	grid-template-columns: 70px 230px  minmax(200px, 3fr);
+	grid-template-rows: 35px minmax(200px, 1fr) 160px;
+}
+
+#clearButton,
+#saveImageButton,
+#saveImageButton,
+#undoButton,
+#redoButton,
+#preset_buttons,
+
+.twisterButtons{
+	font-size: 70%;
+	background-color: rgb(39, 117, 111);
+	font-family: Lucida Console;
+	color: rgb(219, 221, 223);}
+
+#undoButton,#redoButton{
+	font-size: 80%;
+	background-color: rgb(39, 117, 111);
+	font-family: Lucida Console;
+	color: rgb(219, 221, 223);}
+
+.SmokeTool_preset_buttons,.twisterButtons,.EditableLineTool_buttons, .depressedButton,.scissorsButtons	{
+	font-size: 100%;
+	background-color: rgb(39, 117, 111);
+	font-family: Lucida Console;
+	color: rgb(219, 221, 223);}
+
+/* Editable Line Tool */
+#finishButton{	
+	background-color: rgb(62, 86, 167);
+	font-size: 120%;}
+
+.header_labels{
+	font-size: 80%;
+	font-family: Lucida Console;
+	color: rgb(219, 221, 223);}
+
+.pressedButton{
+	background-color: rgb(87, 192, 101);
+	font-size: 100%;
+	font-family: Lucida Console;
+	color: rgb(219, 221, 223);}

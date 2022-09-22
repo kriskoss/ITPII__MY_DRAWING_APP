@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="lib/p5.min.js"></script>
+  <!-- <script src="lib/p5.js"></script> -->
+  <script src="lib/p5.dom.js"></script>
+
+  <script src="sketch.js"></script>
+
+  <!-- add extra scripts below -->
+  <script src="toolbox.js"></script>
+  <script src="colourPalette.js"></script>
+  <script src="helperFunctions.js"></script>
+
+
+  <script src="Freehand_trianglesTool.js"></script>
+  <script src="FreehandCurvedTool.js"></script>
+  <script src="lineToTool.js"></script>
+  <script src="mirrorDrawTool.js"></script>
+  <script src="sprayCanTool.js"></script>
+  <script src="rectTool.js"></script>
+  <script src="ellipseTool.js"></script>
+  <script src="stampTool.js"></script>
+  <script src="editableLineTool.js"></script>
+  <!-- <script src="editableLineTool2.js"></script> -->
+  <script src="smoke_tool.js"></script>
+  <script src="smoke_tool.js"></script>
+  <script src="emitter.js"></script>
+  <script src="emitter.js"></script>
+  <script src="particle.js"></script>
+  <script src="scissorsTool.js"></script>
+  <script src="twisterTool.js"></script>
+  <script src="smokeTool_presets.js"></script>
+  <script src="smokeTool_defaultPresets.js"></script>
+  <script src="smokeTool_helpers.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="box header">Drawing App
+
+      <button id="clearButton">CLEAR</button>
+      <button id="saveImageButton">SAVE</button>
+      <button id="undoButton">UNDO: </button>
+      <button id="redoButton">REDO: </button>
+
+    </div>
+    <div class="box" id="sidebar"></div>
+    <div id="content"></div>
+    <div class="box colourPalette"></div>
+    <div class="box options"></div>
+
+  </div>
+</body>
+
+</html>

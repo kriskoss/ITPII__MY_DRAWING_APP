@@ -1,0 +1,10 @@
+TO make it work:
+- undoCount has to be returned from draw funcion in any tool
+- to store current image of the canvas use finish function  
+- finish functon will store canvas only when pixelsReadyToStore is true
+- return_pixels fuction has to be in the tool
+----
+- to avoid loadPixels in each frame it is necessary to both variables and conditional statements related to them
+    - mouseReleasedInPreviousFrame
+    -  drawingInPreviousFrame
+If used correctyly they will only store pixels when mouse button released
